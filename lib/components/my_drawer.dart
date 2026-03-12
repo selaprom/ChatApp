@@ -32,7 +32,7 @@ class MyDrawer extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25),
                 child: ListTile(
                   title: Text("H O M E"),
-                  leading: Icon(Icons.home),
+                  leading: const Icon(Icons.home),
                   onTap: () {
                     Navigator.of(context).pop();
                   },
@@ -42,7 +42,7 @@ class MyDrawer extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25),
                 child: ListTile(
                   title: Text("S E T T I N G"),
-                  leading: Icon(Icons.settings),
+                  leading: const Icon(Icons.settings),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -56,8 +56,8 @@ class MyDrawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 25, bottom: 25),
             child: ListTile(
-              title: Text("L O G O U T"),
-              leading: Icon(Icons.logout),
+              title: const Text("L O G O U T"),
+              leading: const Icon(Icons.logout),
               onTap: logout,
             ),
           ),
